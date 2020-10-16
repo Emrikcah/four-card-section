@@ -1,1 +1,160 @@
-/* No CSS */
+.text {
+  font-size: 1.6rem;
+  color: #a3a5ae;
+}
+
+.text-h2 {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+@media (min-width: 1100px) {
+  .text-h2 {
+    font-size: 3.6rem;
+  }
+}
+
+.text-h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+.text-sm {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.text-strong {
+  font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 7.5rem 0;
+}
+
+.title--header {
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto 8rem;
+}
+
+@media (min-width: 1100px) {
+  .title--header {
+    max-width: 55rem;
+  }
+}
+
+.title--heading {
+  margin-bottom: 1.8rem;
+}
+
+@media (min-width: 1100px) {
+  .title--heading {
+    max-width: 50rem;
+    margin: 0 auto 1.8rem;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-gap: 2.5rem;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  box-shadow: 0 2rem 2rem #d9dadd;
+  border-radius: 0.4rem;
+}
+
+.cards .card-super {
+  border-top-style: solid;
+  border-top-color: #45d3d3;
+}
+
+.cards .card-team {
+  border-top-style: solid;
+  border-top-color: #ea5353;
+}
+
+.cards .card-karma {
+  border-top-style: solid;
+  border-top-color: #fcaf4a;
+}
+
+.cards .card-cal {
+  border-top-style: solid;
+  border-top-color: #549ef2;
+}
+
+.cards .card--text {
+  margin-bottom: 3.5rem;
+}
+
+.cards .card--image {
+  margin-left: auto;
+  background-size: cover;
+}
+
+.cards .card--image img {
+  display: block;
+  width: 5.5rem;
+}
+
+@media (min-width: 730px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 35rem);
+    align-items: center;
+    grid-gap: 3.5rem;
+  }
+  .cards .card:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / auto;
+  }
+  .cards .card:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .cards .card:nth-child(3) {
+    grid-row: 2/-1;
+    grid-column: 2/3;
+  }
+  .cards .card:nth-child(4) {
+    grid-row: 1 / span 2;
+    grid-column: 3 / auto;
+  }
+}
